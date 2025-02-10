@@ -2,28 +2,38 @@
 
 This project automates the setup, configuration, and deployment of Hyper-V virtual machines using C#. It provides a set of services and utilities to manage virtual machines efficiently.
 
+## Copilot Prompts
+
+1. I want to setup a project to allow easy setup, configuration and deployment of HyperV VMs. can you please suggest some automation tools or project structure for this task in vscode? please suggest a C# based solution, but other solutions are okay too.
+2. What libraries would you use to created the VMs?
+3. Can you please include a powershell script to install this module if it is not installed too?
+
+##
+
 ## Project Structure
 
-```
 HyperVAutomation
-├── src
-│   ├── Program.cs
-│   ├── Services
-│   │   ├── HyperVService.cs
-│   │   └── ConfigurationService.cs
-│   ├── Models
-│   │   └── VirtualMachine.cs
-│   ├── Utilities
-│       └── PowerShellHelper.cs
-├── HyperVAutomation.csproj
-└── README.md
-```
+└── HyperVAutomation
+|   ├── src
+|       ├── Program.cs
+|       ├── Services
+|           ├── HyperVService.cs
+|           └── ConfigurationService.cs
+|       ├── Models
+|           └── VirtualMachine.cs
+|       └── Utilities
+|           └── PowerShellHelper.cs
+|   ├── scripts
+|       └── InstallHyperVModule.ps1
+|   ├── HyperVAutomation.csproj
+|   └── README.md
 
 ## Setup Instructions
 
 1. **Clone the repository**:
    ```
-   git clone <repository-url>
+   git clone https://github.com/mthemark/HyperVAutomation.git
+   
    ```
 
 2. **Navigate to the project directory**:
