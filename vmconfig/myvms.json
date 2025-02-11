@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "VM1",
+    "Memory": 4096,
+    "ProcessorCount": 2,
+    "DiskSizeGB": 50,
+    "NetworkAdapter": "Default Switch",
+    "ISOPath": "C:\\Path\\To\\Your\\ISO\\file1.iso",
+    "VHDPath": "C:\\Path\\To\\Your\\VHD\\file1.vhdx"
+  },
+  {
+    "Name": "VM2",
+    "Memory": 2048,
+    "ProcessorCount": 1,
+    "DiskSizeGB": 30,
+    "NetworkAdapter": "Default Switch",
+    "ISOPath": "C:\\Path\\To\\Your\\ISO\\file2.iso",
+    "VHDPath": "C:\\Path\\To\\Your\\VHD\\file2.vhdx"
+  }
+]

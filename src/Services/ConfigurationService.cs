@@ -5,29 +5,32 @@ namespace HyperVAutomation.Services
 {
     public class ConfigurationService
     {
-        private readonly string configFilePath;
+        private string configFilePath;
 
-        public ConfigurationService(string configFilePath)
+        // set configFilePath
+        public void SetConfigFilePath(string configFilePath)
         {
             this.configFilePath = configFilePath;
         }
 
-        public void LoadConfiguration(out VirtualMachine vmConfig)
+        // load configuration for multiple VirtualMachine from file
+        public void LoadConfiguration(out VirtualMachine[] vmConfigs)
         {
             if (File.Exists(configFilePath))
             {
                 var json = File.ReadAllText(configFilePath);
-                vmConfig = JsonConvert.DeserializeObject<VirtualMachine>(json);
+                vmConfigs = JsonConvert.DeserializeObject<VirtualMachine[]>(json);
             }
             else
             {
-                vmConfig = new VirtualMachine();
+                vmConfigs = new VirtualMachine[0];
             }
         }
 
-        public void SaveConfiguration(VirtualMachine vmConfig)
+        // save confirguration for multiple VirtualMachine to file
+        public void SaveConfiguration(VirtualMachine[] vmConfigs)
         {
-            var json = JsonConvert.SerializeObject(vmConfig, Formatting.Indented);
+            var json = JsonConvert.SerializeObject(vmConfigs, Formatting.Indented);
             File.WriteAllText(configFilePath, json);
         }
     }
