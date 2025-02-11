@@ -6,8 +6,10 @@ namespace HyperVAutomation.Services
 {
     public class HyperVService
     {
+        //include that it was executed in the console
         public void EnsureHyperVModuleInstalled()
         {
+            Console.WriteLine("EnsureHyperVModuleInstalled called");
             string scriptPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "scripts", "InstallHyperVModule.ps1");
 
             using (PowerShell ps = PowerShell.Create())
@@ -21,6 +23,11 @@ namespace HyperVAutomation.Services
                     {
                         Console.WriteLine(error.ToString());
                     }
+                }
+                //sucessfully installed
+                else
+                {
+                    Console.WriteLine("Hyper-V Module is installed.");
                 }
             }
         }
