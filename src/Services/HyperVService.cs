@@ -27,6 +27,8 @@ namespace HyperVAutomation.Services
 
         public void CreateVM(string name, int memory, int cpuCount, int diskSize)
         {
+            Console.WriteLine($"CreateVM called with parameters: Name={name}, Memory={memory}, CPUCount={cpuCount}, DiskSize={diskSize}");
+            /*
             using (PowerShell ps = PowerShell.Create())
             {
                 ps.AddCommand("New-VM")
@@ -56,10 +58,13 @@ namespace HyperVAutomation.Services
                     }
                 }
             }
+            */
         }
 
         public void StartVM(string name)
         {
+            Console.WriteLine($"StartVM called with parameter: Name={name}");
+            /*
             using (PowerShell ps = PowerShell.Create())
             {
                 ps.AddCommand("Start-VM")
@@ -75,10 +80,13 @@ namespace HyperVAutomation.Services
                     }
                 }
             }
+            */
         }
 
         public void StopVM(string name)
         {
+            Console.WriteLine($"StopVM called with parameter: Name={name}");
+            /*
             using (PowerShell ps = PowerShell.Create())
             {
                 ps.AddCommand("Stop-VM")
@@ -94,10 +102,13 @@ namespace HyperVAutomation.Services
                     }
                 }
             }
+            */
         }
 
         public void DeleteVM(string name)
         {
+            Console.WriteLine($"DeleteVM called with parameter: Name={name}");
+            /*
             using (PowerShell ps = PowerShell.Create())
             {
                 ps.AddCommand("Remove-VM")
@@ -114,6 +125,7 @@ namespace HyperVAutomation.Services
                     }
                 }
             }
+            */
         }
     }
 }

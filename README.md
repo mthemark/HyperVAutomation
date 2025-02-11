@@ -38,6 +38,10 @@ This project automates the setup, configuration, and deployment of Hyper-V virtu
 2. #workspace please include all folders in the Project Structure of README.md
 3. can you suggest some content for the README.md in vmconfig folder?
 
+
+# Copilot - workspace - select VM management methods in HyperVService.cs
+1. #selection can you please just console output that the method was called and comment out the implementation for now?
+
 ##
 
 ## Project Structure
