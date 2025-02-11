@@ -11,16 +11,17 @@ This project automates the setup, configuration, and deployment of Hyper-V virtu
 3. Can you please include a powershell script to install this module if it is not installed too?
 
 # Copilot - ConfigurationService.cs
-// load configuration for multiple VirtualMachine from file
-// save configuration for multiple VirtualMachine to file
-// set configFilePath
+1. // load configuration for multiple VirtualMachine from file
+2. // save configuration for multiple VirtualMachine to file
+3. // set configFilePath
 
 # Copilot - Program.cs
-// ensure Hyper-V module is installed
-// get files in the ./vmconfig folder ending with .json
-// allow user to select one of the config files
-// handle user input to select a single vm from vmconfigs
-// handle user input to continue vm management or exit
+1. // ensure Hyper-V module is installed
+2. // get files in the ./vmconfig folder ending with .json
+3. // allow user to select one of the config files
+4. // handle user input to select a single vm from vmconfigs
+5. // handle user input to continue vm management or exit
+6. // thank you for using the tool
 
 # Dev - upgrade to .net9.0
 # Dev - add package Microsoft.PowerShell.SDK 7.5
@@ -32,28 +33,32 @@ This project automates the setup, configuration, and deployment of Hyper-V virtu
 
 # Dev - create myvms.json and preview copilot suggestion
 
-# Copilot - Program.cs
-// thank you for using the tool
+# Copilot - workspace - select Project Structure in global README.md
+1. #selection reformat in bullet list
+2. #workspace please include all folders in the Project Structure of README.md
+3. can you suggest some content for the README.md in vmconfig folder?
 
 ##
 
 ## Project Structure
 
-HyperVAutomation
-└── HyperVAutomation
-|   ├── src
-|       ├── Program.cs
-|       ├── Services
-|           ├── HyperVService.cs
-|           └── ConfigurationService.cs
-|       ├── Models
-|           └── VirtualMachine.cs
-|       └── Utilities
-|           └── PowerShellHelper.cs
-|   ├── scripts
-|       └── InstallHyperVModule.ps1
-|   ├── HyperVAutomation.csproj
-|   └── README.md
+- HyperVAutomation
+  - HyperVAutomation
+    - src
+      - Program.cs
+      - Services
+        - HyperVService.cs
+        - ConfigurationService.cs
+      - Models
+        - VirtualMachine.cs
+      - Utilities
+        - PowerShellHelper.cs
+    - scripts
+      - InstallHyperVModule.ps1
+    - vmconfig
+      - README.md
+    - HyperVAutomation.csproj
+    - README.md
 
 ## Setup Instructions
 
